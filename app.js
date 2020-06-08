@@ -29,6 +29,7 @@ $(() => {
     };
 
     passwordBank = "";
+    passDiv.text("");
 
     // Validate that at least one character type was selected
 
@@ -73,6 +74,7 @@ $(() => {
 
     if (password.length > 0) {
       console.log(password);
+      passDiv.text(password);
     }
     password = "";
     alert("Success!");
