@@ -69,11 +69,7 @@ $(() => {
         );
     }
 
-    console.log(charPref);
-    console.log(passwordBank);
-
     if (password.length > 0) {
-      console.log(password);
       passDiv.text(password);
     }
     password = "";
