@@ -14,6 +14,7 @@ $(() => {
   let passDiv = $("#pass");
 
   let passwordBank = "";
+  let password = "";
 
   form1.submit((e) => {
     e.preventDefault();
@@ -59,9 +60,21 @@ $(() => {
       passwordBank += specArr;
     }
 
+    for (i = 0; i < charPref.length; i++) {
+      password =
+        password +
+        passwordBank.charAt(
+          Math.floor(Math.random() * passwordBank.length + 1)
+        );
+    }
+
     console.log(charPref);
     console.log(passwordBank);
 
+    if (password.length > 0) {
+      console.log(password);
+    }
+    password = "";
     alert("Success!");
   });
 });
