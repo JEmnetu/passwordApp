@@ -2,30 +2,42 @@
   margin: 0;
   padding: 0;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 17px;
+  /* font-size: 17px; */
 }
 body {
-  background: wheat;
+  background: rgb(60, 177, 223);
 }
 
-form {
-  background: skyblue;
+form h3 {
+  margin-bottom: 5px;
+}
+
+#form-div {
+  background: rgb(201, 207, 213);
   width: 50%;
   padding: 20px;
   margin: auto;
+  border: ridge 2px black;
 }
 
 #main-heading {
-  font-family: sans-serif;
-  font-weight: normal;
-  font-size: 24px;
+  /* font-family: sans-serif;
+  font-weight: normal; */
+  font-size: 22px;
   text-align: center;
   padding: 20px;
+  margin-bottom: 2em;
+  background: rgb(201, 207, 213);
+  border: ridge 2px black;
 }
 
 #result {
   width: 80%;
+  padding-top: 20px;
+  padding-bottom: 80px;
+  border: ridge 2px black;
   margin: auto;
   margin-top: 50px;
   text-align: center;
+  background: rgb(201, 207, 213);
 }
