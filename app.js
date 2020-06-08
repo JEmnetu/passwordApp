@@ -29,6 +29,23 @@ $(() => {
 
     passwordBank = "";
 
+    // Validate that at least one character type was selected
+
+    if (
+      charPref.upper == false &&
+      charPref.lower == false &&
+      charPref.number == false &&
+      charPref.special == false
+    ) {
+      alert("Please select at least one character type");
+      return;
+    }
+
+    if (charPref.length == "") {
+      alert("Please select a length between 8 and 128");
+      return;
+    }
+
     if (charPref.upper) {
       passwordBank += upperArr;
     }
@@ -46,7 +63,5 @@ $(() => {
     console.log(passwordBank);
 
     alert("Success!");
-
-    charPref.upper = false;
   });
 });
